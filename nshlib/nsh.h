@@ -368,7 +368,7 @@
 #  define STR_RAMDEVNO(m)    #m
 #  define MKMOUNT_DEVNAME(m) "/dev/ram" STR_RAMDEVNO(m)
 #  define MOUNT_DEVNAME      MKMOUNT_DEVNAME(CONFIG_NSH_ROMFSDEVNO)
-
+extern bool isRomfsInit;
 #else
 
 #  undef CONFIG_NSH_ROMFSRC
