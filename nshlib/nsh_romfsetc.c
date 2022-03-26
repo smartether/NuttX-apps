@@ -34,7 +34,7 @@
 #include "nsh.h"
 
 #ifdef CONFIG_NSH_ROMFSETC
-bool isRomfsInit = false;
+isRomfsInit = false;
 /* Should we use the default ROMFS image?  Or a custom, board-specific
  * ROMFS image?
  */
@@ -116,7 +116,7 @@ int nsh_romfsetc(void)
            MOUNT_DEVNAME, CONFIG_NSH_ROMFSMOUNTPT, errno);
       return ERROR;
     }
-    //isRomfsInit=true;
+    isRomfsInit=true;
   return OK;
 }
 
